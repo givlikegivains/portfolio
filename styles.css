@@ -27,7 +27,8 @@ body{
 .nav-toggle{display:none;background:transparent;border:0;color:var(--text);font-size:1.4rem}
 
 .hero{padding:4rem 0 3rem}
-.hero h1{font-size:2rem;margin:0 0 .5rem}
+.hero h1{font-size:2.8rem;margin:0 0 .5rem}
+.hero .hero-title{font-size:3rem;letter-spacing:1px}
 .lead{color:var(--muted);margin-bottom:1rem}
 .cta{background:var(--accent);color:#042032;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
 .muted{color:var(--muted);margin-left:0.8rem;text-decoration:none}
