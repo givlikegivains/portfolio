@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Parcours — Givains Pakasa</title>
-  <meta name="description" content="Parcours académique de Givains Pakasa" />
+  <meta name="description" content="Parcours académique et professionnel de Givains Pakasa" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
       <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
       <nav id="nav" class="nav">
         <a href="skills.html">Compétences</a>
-        <a href="parcours.html">Parcours</a>
+        <a href="parcours.html" aria-current="page">Parcours</a>
         <a href="projects.html">Projets</a>
         <a href="contact.html">Contact</a>
         <a href="/en/">English</a>
@@ -22,55 +22,64 @@
     </div>
   </header>
 
-  <main class="container timeline-page">
-    <h1>Parcours</h1>
-    <p class="page-intro">Mon parcours académique et professionnel, présenté dans l’ordre chronologique.</p>
+  <main class="container journey-page">
+    <section class="journey-heading">
+      <span class="eyebrow">MON PARCOURS</span>
+      <h1>Une expérience construite étape par étape</h1>
+      <p class="page-intro">De ma formation aux premières expériences professionnelles, chaque étape nourrit mon intérêt pour la vente, la relation client et le milieu financier.</p>
+    </section>
 
-    <div class="timeline">
-      <article class="timeline-item">
-        <div class="timeline-date">2021 — 2024</div>
-        <div class="timeline-card">
-          <h3>Baccalauréat STMG</h3>
-          <p><strong>Sciences et Technologies du Management et de la Gestion</strong></p>
-          <p>Formation axée sur la gestion, la gestion administrative, la comptabilité et les outils de management.</p>
+    <section class="journey-list" aria-label="Parcours académique et professionnel">
+      <article class="journey-item">
+        <div class="journey-marker">01</div>
+        <div class="journey-date">2021 — 2024</div>
+        <div class="journey-card">
+          <span class="journey-type">Formation</span>
+          <h2>Baccalauréat STMG</h2>
+          <h3>Sciences et Technologies du Management et de la Gestion</h3>
+          <p>Une formation axée sur la gestion, l’administration, la comptabilité et les outils de management.</p>
         </div>
       </article>
 
-      <article class="timeline-item">
-        <div class="timeline-date">2024 — aujourd’hui</div>
-        <div class="timeline-card">
-          <h3>BUT Techniques de Commercialisation</h3>
-          <p><strong>Bachelor Universitaire de Technologie</strong></p>
-          <p>Approfondissement des compétences en vente, marketing, gestion de clientèle, gestion de projet et analyse de données.</p>
+      <article class="journey-item">
+        <div class="journey-marker">02</div>
+        <div class="journey-date">2024 — aujourd’hui</div>
+        <div class="journey-card">
+          <span class="journey-type">Formation</span>
+          <h2>BUT Techniques de Commercialisation</h2>
+          <h3>Bachelor Universitaire de Technologie</h3>
+          <p>Développement de compétences en vente, marketing, gestion de clientèle, gestion de projet et analyse de données.</p>
         </div>
       </article>
 
-      <article class="timeline-item">
-        <div class="timeline-date">Février — Mars 2025</div>
-        <div class="timeline-card">
-          <h3>Stage en tant que conseiller de vente</h3>
-          <p><strong>Nature &amp; Découverte</strong></p>
-          <p>Accompagnement client, vente de produits, gestion de la relation commerciale, prospection et développement du portefeuille clients.</p>
+      <article class="journey-item">
+        <div class="journey-marker">03</div>
+        <div class="journey-date">Février — Mars 2025</div>
+        <div class="journey-card">
+          <span class="journey-type journey-type--experience">Expérience</span>
+          <h2>Conseiller de vente</h2>
+          <h3>Nature &amp; Découverte</h3>
+          <p>Accompagnement des clients, conseil et vente de produits, gestion de la relation commerciale et fidélisation.</p>
         </div>
       </article>
 
-      <article class="timeline-item">
-        <div class="timeline-date">Mars — Mai 2026</div>
-        <div class="timeline-card">
-          <h3>Stage en tant que Gestionnaire de Patrimoine</h3>
-          <p><strong>A&amp;Y Patrimoine</strong></p>
+      <article class="journey-item">
+        <div class="journey-marker">04</div>
+        <div class="journey-date">Mars — Mai 2026</div>
+        <div class="journey-card">
+          <span class="journey-type journey-type--experience">Expérience</span>
+          <h2>Gestionnaire de Patrimoine</h2>
+          <h3>A&amp;Y Patrimoine</h3>
           <p>Analyse patrimoniale, suivi administratif, compréhension des besoins financiers et gestion rigoureuse des dossiers clients.</p>
         </div>
       </article>
-    </div>
+    </section>
 
-    <p><a class="cta" href="index.html">← Retour</a></p>
+    <p class="journey-back"><a class="cta" href="index.html">← Retour</a></p>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small>
-    </div>
+    <div class="container"><small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small></div>
   </footer>
 
   <script src="script.js"></script>

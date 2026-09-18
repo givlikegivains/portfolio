@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Education — Givains Pakasa</title>
-  <meta name="description" content="Education of Givains Pakasa" />
+  <meta name="description" content="Academic and professional journey of Givains Pakasa" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
       <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
       <nav id="nav" class="nav">
         <a href="/en/skills.html">Skills</a>
-        <a href="/en/education.html">Education</a>
+        <a href="/en/education.html" aria-current="page">Education</a>
         <a href="/en/projects.html">Projects</a>
         <a href="/en/contact.html">Contact</a>
         <a href="/">Français</a>
@@ -22,55 +22,64 @@
     </div>
   </header>
 
-  <main class="container timeline-page">
-    <h1>Education</h1>
-    <p class="page-intro">My academic and professional journey, presented in chronological order.</p>
+  <main class="container journey-page">
+    <section class="journey-heading">
+      <span class="eyebrow">MY JOURNEY</span>
+      <h1>Experience built step by step</h1>
+      <p class="page-intro">From my education to my first professional experiences, each step has strengthened my interest in sales, customer relations and finance.</p>
+    </section>
 
-    <div class="timeline">
-      <article class="timeline-item">
-        <div class="timeline-date">2021 — 2024</div>
-        <div class="timeline-card">
-          <h3>STMG Baccalaureate</h3>
-          <p><strong>Sciences and Technologies of Management</strong></p>
-          <p>Training focused on management, administration, accounting, and business operations.</p>
+    <section class="journey-list" aria-label="Academic and professional journey">
+      <article class="journey-item">
+        <div class="journey-marker">01</div>
+        <div class="journey-date">2021 — 2024</div>
+        <div class="journey-card">
+          <span class="journey-type">Education</span>
+          <h2>STMG Baccalaureate</h2>
+          <h3>Sciences and Technologies of Management</h3>
+          <p>Training focused on management, administration, accounting and business operations.</p>
         </div>
       </article>
 
-      <article class="timeline-item">
-        <div class="timeline-date">2024 — present</div>
-        <div class="timeline-card">
-          <h3>Bachelor's Degree in Commercial Techniques</h3>
-          <p><strong>BUT Techniques de Commercialisation</strong></p>
-          <p>Development of skills in sales, marketing, customer management, project management, and data analysis.</p>
+      <article class="journey-item">
+        <div class="journey-marker">02</div>
+        <div class="journey-date">2024 — present</div>
+        <div class="journey-card">
+          <span class="journey-type">Education</span>
+          <h2>Bachelor's Degree in Commercial Techniques</h2>
+          <h3>BUT Techniques de Commercialisation</h3>
+          <p>Development of skills in sales, marketing, customer management, project management and data analysis.</p>
         </div>
       </article>
 
-      <article class="timeline-item">
-        <div class="timeline-date">February — March 2025</div>
-        <div class="timeline-card">
-          <h3>Sales advisor internship</h3>
-          <p><strong>Nature &amp; Découverte</strong></p>
-          <p>Customer support, sales, commercial relationship management, prospecting, and client portfolio development.</p>
+      <article class="journey-item">
+        <div class="journey-marker">03</div>
+        <div class="journey-date">February — March 2025</div>
+        <div class="journey-card">
+          <span class="journey-type journey-type--experience">Experience</span>
+          <h2>Sales advisor</h2>
+          <h3>Nature &amp; Découverte</h3>
+          <p>Customer support, product advice and sales, commercial relationship management and customer loyalty.</p>
         </div>
       </article>
 
-      <article class="timeline-item">
-        <div class="timeline-date">March — May 2026</div>
-        <div class="timeline-card">
-          <h3>Wealth Management internship</h3>
-          <p><strong>A&amp;Y Patrimoine</strong></p>
-          <p>Wealth analysis, administrative follow-up, understanding client financial needs, and careful management of client files.</p>
+      <article class="journey-item">
+        <div class="journey-marker">04</div>
+        <div class="journey-date">March — May 2026</div>
+        <div class="journey-card">
+          <span class="journey-type journey-type--experience">Experience</span>
+          <h2>Wealth Management intern</h2>
+          <h3>A&amp;Y Patrimoine</h3>
+          <p>Wealth analysis, administrative follow-up, understanding financial needs and careful management of client files.</p>
         </div>
       </article>
-    </div>
+    </section>
 
-    <p><a class="cta" href="/en/">← Back</a></p>
+    <p class="journey-back"><a class="cta" href="/en/">← Back</a></p>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Givains Pakasa — All rights reserved</small>
-    </div>
+    <div class="container"><small>© <span id="year"></span> Givains Pakasa — All rights reserved</small></div>
   </footer>
 
   <script src="/script.js"></script>
