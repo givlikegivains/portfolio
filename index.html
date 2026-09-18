@@ -11,31 +11,204 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
+      <div class="avatar" aria-label="Photo de Givains Pakasa">
+        <img src="assets/images/avatar.jpg" alt="Portrait de Givains Pakasa" />
+      </div>
       <a class="logo" href="#">PORTFOLIO</a>
       <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
       <nav id="nav" class="nav">
         <a href="skills.html">Compétences</a>
         <a href="parcours.html">Parcours</a>
         <a href="projects.html">Projets</a>
-        <a href="contact.html">Contact</a>
+        <a href="#contact">Contact</a>
         <a href="/en/">English</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="home-page">
     <section id="hero" class="hero">
-      <div class="container">
-        <h1 class="hero-title">Givains Pakasa</h1>
-        <p class="lead">Étudiant en BUT Techniques de commercialisation — Je m’intéresse particulièrement à l’immobilier, au milieu financier et à la relation client de façon générale.</p>
-        <p><a class="cta" href="projects.html">Voir mes projets</a> <a class="muted" href="CV.pdf" target="_blank">Télécharger CV</a></p>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Portfolio • Commercial</span>
+          <h1 class="hero-title">Givains Pakasa</h1>
+          <p class="lead">Étudiant en BUT Techniques de commercialisation, passionné par la vente, le marketing, l’analyse de données et le secteur immobilier.</p>
+          <p class="tagline">Transformer chaque échange en opportunité.</p>
+          <div class="hero-actions">
+            <a class="cta" href="parcours.html">Découvrir mon parcours</a>
+            <a class="muted" href="projects.html">Voir mes projets</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration de profil">
+          <div class="portrait-frame">
+            <img src="assets/images/avatar.jpg" alt="Portrait de Givains Pakasa" />
+          </div>
+          <div class="floating-card card-one">
+            <strong>Vente</strong>
+            <span>Relation client • prospection</span>
+          </div>
+          <div class="floating-card card-two">
+            <strong>Immobilier</strong>
+            <span>Analyse • conseil • accompagnement</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="intro" class="container about">
+    <section id="about" class="container about-panel">
+      <div class="section-heading">
+        <span class="kicker">À propos</span>
+        <h2>Un profil orienté client, performance et développement.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          Je suis un étudiant en BUT Techniques de commercialisation, avec un intérêt fort pour la relation client,
+          la négociation, la stratégie commerciale et le secteur immobilier. Mes expériences m’ont permis de développer
+          des compétences sur la vente, l’analyse de données, la communication et l’accompagnement client.
+        </p>
+        <div class="mini-panel">
+          <p>Mon objectif :</p>
+          <strong>Créer de la valeur en comprenant les besoins réels des clients.</strong>
+        </div>
+      </div>
     </section>
 
+    <section class="container stats-section" aria-label="Statistiques personnelles">
+      <div class="stat-card">
+        <strong>2</strong>
+        <span>Expériences</span>
+      </div>
+      <div class="stat-card">
+        <strong>4</strong>
+        <span>Domaines clés</span>
+      </div>
+      <div class="stat-card">
+        <strong>2024</strong>
+        <span>Début du BUT</span>
+      </div>
+      <div class="stat-card">
+        <strong>100%</strong>
+        <span>Angagement</span>
+      </div>
+    </section>
+
+    <section class="container skills-overview">
+      <div class="section-heading">
+        <span class="kicker">Compétences</span>
+        <h2>Des savoir-faire complémentaires et utiles dans le monde professionnel.</h2>
+      </div>
+
+      <div class="skills-preview">
+        <article class="skill-card skill-vente">
+          <span class="skill-icon">V</span>
+          <h3>Vente</h3>
+          <ul>
+            <li>Relation client</li>
+            <li>Argumentation</li>
+            <li>Prospection</li>
+            <li>Fidélisation</li>
+          </ul>
+          <a href="skills.html">Voir plus</a>
+        </article>
+
+        <article class="skill-card skill-marketing">
+          <span class="skill-icon">M</span>
+          <h3>Marketing</h3>
+          <ul>
+            <li>Étude de marché</li>
+            <li>Analyse de concurrence</li>
+            <li>Définition de stratégie</li>
+            <li>Construction d’offre</li>
+          </ul>
+          <a href="skills.html">Voir plus</a>
+        </article>
+
+        <article class="skill-card skill-data">
+          <span class="skill-icon">D</span>
+          <h3>Analyse de données</h3>
+          <ul>
+            <li>Interprétation d’indicateurs</li>
+            <li>Tableaux de bord</li>
+            <li>Excel / Google Sheets</li>
+            <li>Google Forms / Canva</li>
+          </ul>
+          <a href="skills.html">Voir plus</a>
+        </article>
+
+        <article class="skill-card skill-soft">
+          <span class="skill-icon">S</span>
+          <h3>Savoir-être</h3>
+          <ul>
+            <li>Efficacité sous pression</li>
+            <li>Compréhension client</li>
+            <li>Travail en équipe</li>
+            <li>Autonomie / ponctualité</li>
+          </ul>
+          <a href="skills.html">Voir plus</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container experience-overview" id="experience">
+      <div class="section-heading">
+        <span class="kicker">Expériences</span>
+        <h2>Des expériences qui renforcent mon intérêt pour la vente et l’immobilier.</h2>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-card experience-primary">
+          <div class="experience-badge">Expérience</div>
+          <h3>Gestionnaire de Patrimoine</h3>
+          <p class="experience-meta">A&Y Patrimoine • Mars — Mai 2026</p>
+          <p>
+            Analyse de projets immobiliers, suivi administratif et accompagnement des clients dans leurs préoccupations liées au logement et à l’acquisition.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-badge">Expérience</div>
+          <h3>Conseiller de vente</h3>
+          <p class="experience-meta">Nature &amp; Découverte • Février — Mars 2025</p>
+          <p>
+            Conseil client, prospection, vente de produits, traitement des demandes et fidélisation de la relation commerciale.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container projects-overview" id="projects">
+      <div class="section-heading">
+        <span class="kicker">Projets</span>
+        <h2>Quelques exemples de réalisations et d’initiatives.</h2>
+      </div>
+
+      <div class="project-grid home-project-grid">
+        <article class="project-card">
+          <h3><a class="project-link" href="projects/stage-gestion-patrimoine.html">Stage en gestion de patrimoine</a></h3>
+          <p>Stage chez A&amp;Y orienté sur l’analyse de projets immobiliers, le suivi patrimonial et l’accompagnement client.</p>
+        </article>
+
+        <article class="project-card">
+          <h3><a class="project-link" href="projects/event-allemand.html">Conception d’un évènement fictif</a></h3>
+          <p>Projet universitaire mené en allemand autour de la gestion budgétaire, des indicateurs et de la communication.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Projet à venir</h3>
+          <p>Une nouvelle initiative commerciale ou marketing à ajouter prochainement pour illustrer mon développement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container callout-panel">
+      <div>
+        <span class="kicker">Contact</span>
+        <h2>Vous souhaitez échanger sur une opportunité ou un projet ?</h2>
+      </div>
+      <a class="cta" href="mailto:pakasa.givains.pro@gmail.com?subject=Contact%20portfolio">Me contacter</a>
+    </section>
   </main>
 
   <footer class="site-footer">

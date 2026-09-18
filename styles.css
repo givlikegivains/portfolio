@@ -1,105 +1,222 @@
-:root{
-  --bg:#0f1724;
-  --card:#0b1220;
-  --accent:#06b6d4;
-  --muted:#94a3b8;
-  --text:#e6eef6;
-  --max-width:1000px;
-  --radius:8px;
-  --gap:1rem;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:linear-gradient(180deg,#071025 0%, #081026 100%);
-  color:var(--text);
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
-}
-.container{max-width:var(--max-width);margin:0 auto;padding:2rem;}
-.site-header{background:transparent;padding:1rem 0;position:sticky;top:0;z-index:10;}
-.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
-.logo{color:var(--text);font-weight:700;text-decoration:none;font-size:1.1rem}
-.nav{display:flex;gap:1rem}
-.nav a{color:var(--muted);text-decoration:none}
-.nav a:hover{color:var(--text)}
-.nav-toggle{display:none;background:transparent;border:0;color:var(--text);font-size:1.4rem}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Givains Pakasa — Portfolio</title>
+  <meta name="description" content="Professional portfolio of Givains Pakasa — student in BUT Techniques de commercialisation" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="alternate" href="/en/" hreflang="en" />
+  <link rel="alternate" href="/" hreflang="fr" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="avatar" aria-label="Photo of Givains Pakasa">
+        <img src="/assets/images/avatar.jpg" alt="Portrait of Givains Pakasa" />
+      </div>
+      <a class="logo" href="#">PORTFOLIO</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+      <nav id="nav" class="nav">
+        <a href="/en/skills.html">Skills</a>
+        <a href="/en/education.html">Education</a>
+        <a href="/en/projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="/">Français</a>
+      </nav>
+    </div>
+  </header>
 
-.hero{padding:4rem 0 3rem}
-.hero h1{font-size:2.8rem;margin:0 0 .5rem}
-.hero .hero-title{font-size:3rem;letter-spacing:1px}
-.lead{color:var(--muted);margin-bottom:1rem}
-.cta{background:var(--accent);color:#042032;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
-.muted{color:var(--muted);margin-left:0.8rem;text-decoration:none}
+  <main class="home-page">
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Portfolio • Commercial</span>
+          <h1 class="hero-title">Givains Pakasa</h1>
+          <p class="lead">Student in a Bachelor’s in Commercial Techniques, passionate about sales, marketing, data analysis and the real-estate sector.</p>
+          <p class="tagline">Turning every conversation into an opportunity.</p>
+          <div class="hero-actions">
+            <a class="cta" href="/en/education.html">Discover my journey</a>
+            <a class="muted" href="/en/projects.html">See my projects</a>
+          </div>
+        </div>
 
-.about, .skills, .projects, .contact{background:rgba(255,255,255,0.02);margin:1.2rem 0;padding:1.2rem;border-radius:var(--radius)}
-.skill-list{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:0}
-.skill-list li{background:#071526;padding:.5rem .8rem;border-radius:999px;color:var(--muted);font-size:.95rem}
+        <div class="hero-visual" aria-label="Profile illustration">
+          <div class="portrait-frame">
+            <img src="/assets/images/avatar.jpg" alt="Portrait of Givains Pakasa" />
+          </div>
+          <div class="floating-card card-one">
+            <strong>Sales</strong>
+            <span>Client relations • prospecting</span>
+          </div>
+          <div class="floating-card card-two">
+            <strong>Real estate</strong>
+            <span>Analysis • advice • support</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:.8rem}
-.project-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:8px}
-.project-card h3{margin:.2rem 0 .4rem}
-.project-links a{color:var(--accent);text-decoration:none}
+    <section id="about" class="container about-panel">
+      <div class="section-heading">
+        <span class="kicker">About</span>
+        <h2>A client-oriented profile with a strong focus on performance.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I am a student in a Bachelor’s in Commercial Techniques, with a strong interest in customer relations,
+          negotiation, commercial strategy and the real-estate sector. My experiences have helped me develop skills in
+          sales, data analysis, communication and customer support.
+        </p>
+        <div class="mini-panel">
+          <p>My goal:</p>
+          <strong>Create value by understanding the real needs of customers.</strong>
+        </div>
+      </div>
+    </section>
 
-.site-footer{padding:1.2rem 0;text-align:center;color:var(--muted);margin-top:1.6rem}
+    <section class="container stats-section" aria-label="Personal statistics">
+      <div class="stat-card">
+        <strong>2</strong>
+        <span>Experiences</span>
+      </div>
+      <div class="stat-card">
+        <strong>4</strong>
+        <span>Key fields</span>
+      </div>
+      <div class="stat-card">
+        <strong>2024</strong>
+        <span>Started my degree</span>
+      </div>
+      <div class="stat-card">
+        <strong>100%</strong>
+        <span>Commitment</span>
+      </div>
+    </section>
 
-/* Responsive */
-@media (max-width:800px){
-  .project-grid{grid-template-columns:1fr}
-  .nav{display:none;position:absolute;right:1rem;top:4.2rem;background:rgba(2,6,23,0.9);padding:.8rem;border-radius:8px;flex-direction:column}
-  .nav-toggle{display:block}
-  .site-header .container{position:relative}
-}
+    <section class="container skills-overview">
+      <div class="section-heading">
+        <span class="kicker">Skills</span>
+        <h2>Complementary skills that are relevant in the professional world.</h2>
+      </div>
 
-/* Project title links styled as tabs */
-.project-grid .project-card h3 { margin: 0 0 .6rem; font-size: 1.05rem; }
-.project-link {
-  display:inline-block;
-  padding:.5rem .75rem;
-  border-radius:8px 8px 0 0;
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  color:var(--text);
-  text-decoration:none;
-  border:1px solid rgba(255,255,255,0.04);
-  border-bottom:3px solid transparent;
-  transition:background .15s, border-color .15s, color .15s;
-}
-.project-link:hover { color:var(--accent); }
-.project-link.active {
-  background:var(--card);
-  border-color:rgba(37,99,235,0.12);
-  border-bottom-color:var(--accent);
-  color:var(--accent);
-  font-weight:600;
-}
+      <div class="skills-preview">
+        <article class="skill-card skill-vente">
+          <span class="skill-icon">S</span>
+          <h3>Sales</h3>
+          <ul>
+            <li>Customer relations</li>
+            <li>Argumentation</li>
+            <li>Prospecting</li>
+            <li>Customer loyalty</li>
+          </ul>
+          <a href="/en/skills.html">See more</a>
+        </article>
 
-/* Blocs de compétences en forme de pieuvre */
-.skills-page{padding-top:3rem}
-.skills-intro{color:var(--muted);margin:-.5rem 0 2.5rem}
-.skills-octopus{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3rem 5rem;position:relative;padding:1rem 0 2rem}
-.skill-tentacle{position:relative;min-height:280px;display:flex;align-items:center;gap:1rem}
-.skill-tentacle::after{content:"";position:absolute;z-index:0;width:145px;height:145px;border-radius:50%;background:rgba(6,182,212,.08);border:2px solid rgba(6,182,212,.35);left:65px;top:50%;transform:translateY(-50%);box-shadow:0 0 28px rgba(6,182,212,.12)}
-.skill-orb{width:150px;height:150px;flex:0 0 150px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at 35% 30%,#164e63,#0e7490 45%,#083344 100%);border:4px solid var(--accent);box-shadow:0 0 25px rgba(6,182,212,.28);position:relative;z-index:2}
-.skill-orb span{font-weight:800;font-size:1rem;letter-spacing:.08em;line-height:1.2;color:#ecfeff}
-.skill-tentacle ul{list-style:none;padding:0;margin:0;position:relative;z-index:2;display:flex;flex-direction:column;gap:.45rem}
-.skill-tentacle li{background:rgba(11,18,32,.94);border:1px solid rgba(6,182,212,.35);border-radius:999px;padding:.42rem .75rem;color:var(--text);font-size:.88rem;white-space:nowrap;box-shadow:0 3px 12px rgba(0,0,0,.18)}
-.skill-tentacle li::before{content:"•";color:var(--accent);font-weight:800;margin-right:.4rem}
-.skill-tentacle--marketing .skill-orb{background:radial-gradient(circle at 35% 30%,#4c1d95,#7e22ce 45%,#3b0764 100%);border-color:#c084fc;box-shadow:0 0 25px rgba(192,132,252,.28)}
-.skill-tentacle--marketing li{border-color:rgba(192,132,252,.45)}.skill-tentacle--marketing li::before{color:#c084fc}
-.skill-tentacle--data .skill-orb{background:radial-gradient(circle at 35% 30%,#14532d,#16a34a 45%,#052e16 100%);border-color:#4ade80;box-shadow:0 0 25px rgba(74,222,128,.28)}
-.skill-tentacle--data li{border-color:rgba(74,222,128,.4)}.skill-tentacle--data li::before{color:#4ade80}
-.skill-tentacle--soft .skill-orb{background:radial-gradient(circle at 35% 30%,#713f12,#d97706 45%,#451a03 100%);border-color:#fbbf24;box-shadow:0 0 25px rgba(251,191,36,.28)}
-.skill-tentacle--soft li{border-color:rgba(251,191,36,.4)}.skill-tentacle--soft li::before{color:#fbbf24}
+        <article class="skill-card skill-marketing">
+          <span class="skill-icon">M</span>
+          <h3>Marketing</h3>
+          <ul>
+            <li>Market study</li>
+            <li>Competitor analysis</li>
+            <li>Strategy definition</li>
+            <li>Offer building</li>
+          </ul>
+          <a href="/en/skills.html">See more</a>
+        </article>
 
-@media (max-width:800px){
-  .project-grid{grid-template-columns:1fr}
-  .nav{display:none;position:absolute;right:1rem;top:4.2rem;background:rgba(2,6,23,0.9);padding:.8rem;border-radius:8px;flex-direction:column}
-  .nav-toggle{display:block}
-  .site-header .container{position:relative}
-  .skills-octopus{grid-template-columns:1fr;gap:2rem;padding-top:0}
-  .skill-tentacle{min-height:220px;gap:.7rem}
-  .skill-orb{width:120px;height:120px;flex-basis:120px}
-  .skill-tentacle::after{width:115px;height:115px;left:52px}
-  .skill-tentacle li{white-space:normal;font-size:.8rem}
-}
+        <article class="skill-card skill-data">
+          <span class="skill-icon">D</span>
+          <h3>Data analysis</h3>
+          <ul>
+            <li>Indicator interpretation</li>
+            <li>Dashboards</li>
+            <li>Excel / Google Sheets</li>
+            <li>Google Forms / Canva</li>
+          </ul>
+          <a href="/en/skills.html">See more</a>
+        </article>
+
+        <article class="skill-card skill-soft">
+          <span class="skill-icon">W</span>
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Efficiency under pressure</li>
+            <li>Understanding customer needs</li>
+            <li>Teamwork</li>
+            <li>Autonomy / punctuality</li>
+          </ul>
+          <a href="/en/skills.html">See more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container experience-overview" id="experience">
+      <div class="section-heading">
+        <span class="kicker">Experience</span>
+        <h2>Experiences that reinforce my interest in sales and real estate.</h2>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-card experience-primary">
+          <div class="experience-badge">Experience</div>
+          <h3>Real-estate asset management intern</h3>
+          <p class="experience-meta">A&Y Patrimoine • March — May 2026</p>
+          <p>
+            Analysis of real-estate projects, administrative follow-up and client support around housing and acquisition needs.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-badge">Experience</div>
+          <h3>Sales advisor</h3>
+          <p class="experience-meta">Nature &amp; Découverte • February — March 2025</p>
+          <p>
+            Customer advice, prospecting, sales, issue handling and relationship loyalty across commercial interactions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container projects-overview" id="projects">
+      <div class="section-heading">
+        <span class="kicker">Projects</span>
+        <h2>A few examples of my work and initiatives.</h2>
+      </div>
+
+      <div class="project-grid home-project-grid">
+        <article class="project-card">
+          <h3><a class="project-link" href="/en/projects/stage-gestion-patrimoine.html">Internship in real-estate asset management</a></h3>
+          <p>Internship focused on real-estate project analysis, asset monitoring and client support.</p>
+        </article>
+
+        <article class="project-card">
+          <h3><a class="project-link" href="/en/projects/event-allemand.html">Design of a fictional event</a></h3>
+          <p>University project in German focusing on budgeting, KPIs and communication of results.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Upcoming project</h3>
+          <p>A new commercial or marketing initiative to be added soon to showcase my growth.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container callout-panel">
+      <div>
+        <span class="kicker">Contact</span>
+        <h2>Would you like to discuss an opportunity or a project?</h2>
+      </div>
+      <a class="cta" href="mailto:pakasa.givains.pro@gmail.com?subject=Portfolio%20contact">Contact me</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Givains Pakasa — All rights reserved</small>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
