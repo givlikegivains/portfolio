@@ -1,0 +1,212 @@
+.journey-page {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.journey-heading {
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.journey-heading .eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--accent, #c8963e);
+  margin-bottom: 0.75rem;
+}
+
+.journey-heading h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  margin: 0 0 0.9rem;
+}
+
+.journey-heading .page-intro {
+  color: var(--muted, #6b7280);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* ---------- Timeline structure ---------- */
+
+.journey-list {
+  position: relative;
+  max-width: 780px;
+  margin-inline: auto;
+  padding-left: 2.75rem;
+}
+
+/* Ligne verticale de fond + ligne de progression animée */
+.journey-line {
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: 1.1rem;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.08)
+  );
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.journey-line-fill {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 0%;
+  background: linear-gradient(to bottom, var(--accent, #c8963e), var(--accent-2, #8a6a2f));
+  transition: height 0.15s linear;
+}
+
+.journey-item {
+  position: relative;
+  padding-bottom: clamp(1.75rem, 4vw, 2.5rem);
+
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.journey-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.journey-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Marqueur / numéro sur la ligne */
+.journey-marker {
+  position: absolute;
+  top: 0;
+  left: -2.75rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted, #6b7280);
+  transition: border-color 0.4s ease, color 0.4s ease, transform 0.4s ease,
+    box-shadow 0.4s ease;
+  z-index: 1;
+}
+
+.journey-item.is-visible .journey-marker {
+  border-color: var(--accent, #c8963e);
+  color: var(--accent, #c8963e);
+  box-shadow: 0 0 0 6px rgba(200, 150, 62, 0.12);
+  transform: scale(1.05);
+}
+
+.journey-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted, #6b7280);
+  margin: 0.15rem 0 0.6rem 0.1rem;
+  text-transform: uppercase;
+}
+
+/* ---------- Carte ---------- */
+
+.journey-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -14px rgba(0, 0, 0, 0.18);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.journey-card h2 {
+  font-size: 1.15rem;
+  margin: 0.5rem 0 0.15rem;
+}
+
+.journey-card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted, #6b7280);
+  margin: 0 0 0.75rem;
+}
+
+.journey-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Badge Formation / Expérience */
+.journey-type {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: #eef1f4;
+  color: #4b5563;
+}
+
+.journey-type--experience {
+  background: rgba(200, 150, 62, 0.14);
+  color: #9a6d1f;
+}
+
+/* ---------- Retour ---------- */
+
+.journey-back {
+  text-align: center;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 560px) {
+  .journey-list {
+    padding-left: 2.2rem;
+  }
+  .journey-line {
+    left: 0.85rem;
+  }
+  .journey-marker {
+    left: -2.2rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+  .journey-card {
+    padding: 1.1rem 1.2rem;
+  }
+}
+
+/* Respecte les préférences de réduction de mouvement */
+@media (prefers-reduced-motion: reduce) {
+  .journey-item,
+  .journey-marker,
+  .journey-card,
+  .journey-line-fill {
+    transition: none !important;
+  }
+  .journey-item {
+    opacity: 1;
+    transform: none;
+  }
+}
