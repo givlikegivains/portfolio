@@ -6,6 +6,7 @@
   <title>Compétences — Givains Pakasa</title>
   <meta name="description" content="Compétences de Givains Pakasa" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="skills.css" />
 </head>
 <body>
   <header class="site-header">
@@ -69,6 +70,62 @@
           <li>Ponctualité</li>
         </ul>
       </article>
+    </section>
+
+    <!-- Language proficiency routes -->
+    <section class="language-routes" aria-label="Niveaux de langue">
+      <h2 class="section-subtitle">Niveaux de langue</h2>
+      <p class="muted">Visualisation simple des niveaux : Débutant → Survie → Autonome → Expert → Bilingue</p>
+
+      <div class="routes-grid" role="list">
+        <!-- English: marker on 3rd (Autonome) -->
+        <div class="route" role="listitem" aria-label="Anglais">
+          <div class="route-label">Anglais</div>
+          <div class="route-track" data-steps="5">
+            <div class="step">Débutant</div>
+            <div class="step">Survie</div>
+            <div class="step has-marker"><span class="marker">Je suis ici</span><span class="label">Autonome</span></div>
+            <div class="step">Expert</div>
+            <div class="step">Bilingue</div>
+          </div>
+        </div>
+
+        <!-- Français: marker on 5th (Bilingue) -->
+        <div class="route" role="listitem" aria-label="Français">
+          <div class="route-label">Français</div>
+          <div class="route-track" data-steps="5">
+            <div class="step">Débutant</div>
+            <div class="step">Survie</div>
+            <div class="step">Autonome</div>
+            <div class="step">Expert</div>
+            <div class="step has-marker"><span class="marker">✓</span><span class="label">Bilingue</span></div>
+          </div>
+        </div>
+
+        <!-- Allemand: marker on 2nd (Survie) -->
+        <div class="route" role="listitem" aria-label="Allemand">
+          <div class="route-label">Allemand</div>
+          <div class="route-track" data-steps="5">
+            <div class="step">Débutant</div>
+            <div class="step has-marker"><span class="marker">Je suis ici</span><span class="label">Survie</span></div>
+            <div class="step">Autonome</div>
+            <div class="step">Expert</div>
+            <div class="step">Bilingue</div>
+          </div>
+        </div>
+
+        <!-- Lingala: marker on 5th (Bilingue) -->
+        <div class="route" role="listitem" aria-label="Lingala">
+          <div class="route-label">Lingala</div>
+          <div class="route-track" data-steps="5">
+            <div class="step">Débutant</div>
+            <div class="step">Survie</div>
+            <div class="step">Autonome</div>
+            <div class="step">Expert</div>
+            <div class="step has-marker"><span class="marker">✓</span><span class="label">Bilingue</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <p><a class="cta" href="index.html">← Retour</a></p>
