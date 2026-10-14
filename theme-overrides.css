@@ -1,0 +1,59 @@
+/* theme-overrides.css — site background and subtle light/shadow nuances
+   Applied on top of existing styles via dynamic injection from script.js
+*/
+:root{
+  --theme-bg:#88a3b4; /* primary sampled color */
+  --theme-bg-1: rgba(136,163,180,0.95);
+  --theme-bg-2: rgba(138,163,180,0.18);
+  --theme-glow: rgba(255,255,255,0.035);
+}
+
+html,body{
+  height:100%;
+}
+
+body{
+  background-color:var(--theme-bg);
+  /* layered subtle gradients to simulate light and shadow */
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,0.06), transparent 12%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06)),
+    radial-gradient(circle at 85% 80%, rgba(2,6,23,0.06), transparent 20%);
+  background-blend-mode: overlay, normal, multiply;
+  color:var(--text);
+}
+
+/* Slightly lift header and footer with subtle blur and light */
+.site-header, .site-footer{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.18);
+  backdrop-filter: blur(4px) saturate(120%);
+}
+
+/* Make containers slightly translucent so background shows through */
+.container {
+  background: transparent;
+}
+
+/* Cards and panels should contrast but keep a hint of the theme color */
+.journey-card, .project-card, .skill-tentacle, .project-detail, .callout-panel, .contact-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 12px 28px rgba(2,6,23,0.22);
+}
+
+/* Accent glow for CTAs and markers */
+.cta, .journey-marker, .skill-orb, .marker {
+  box-shadow: 0 6px 20px rgba(6,182,212,0.08);
+}
+
+/* Subtle vignette to focus content */
+body::after{
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(2,6,23,0.06) 100%);
+  mix-blend-mode: multiply;
+}
