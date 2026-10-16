@@ -1,0 +1,71 @@
+/* skills.css — liens des compétences et pages détaillées (s'appuie sur styles.css et parcours.css) */
+
+/* ---------- Page Compétences : pastilles cliquables ---------- */
+.skill-tentacle li.skill-link-item{padding:0;border:0;background:none}
+.skill-tentacle li.skill-link-item::before{content:none}
+.skill-tentacle li a{display:flex;align-items:center;gap:.4rem;background:rgba(11,18,32,.94);border:1px solid rgba(6,182,212,.35);border-radius:999px;padding:.42rem .75rem;color:var(--text);text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+.skill-tentacle li a::before{content:"•";color:var(--accent);font-weight:800}
+.skill-tentacle li a::after{content:"→";margin-left:auto;padding-left:.6rem;color:var(--accent);transition:transform .2s}
+.skill-tentacle li a:hover,.skill-tentacle li a:focus-visible{border-color:var(--accent);background:rgba(11,25,42,.98);transform:translateX(4px);outline:none}
+.skill-tentacle li a:hover::after,.skill-tentacle li a:focus-visible::after{transform:translateX(3px)}
+
+/* ---------- Pages détaillées ---------- */
+.skill-detail{max-width:860px;margin:0 auto}
+
+.breadcrumb{font-size:.85rem;color:var(--muted);margin-bottom:1.6rem}
+.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0}
+.breadcrumb li+li::before{content:"›";margin-right:.4rem;color:rgba(148,163,184,.6)}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb [aria-current="page"]{color:var(--text)}
+
+.skill-section{margin-top:1.4rem}
+.skill-section .journey-card::before{content:none}
+.skill-section .journey-card h2{display:flex;align-items:center;gap:.6rem}
+.skill-section .journey-card h3{margin:1.1rem 0 .4rem;font-size:1rem;color:var(--text)}
+.section-number{display:inline-grid;place-items:center;flex:0 0 auto;width:32px;height:32px;border-radius:10px;font-size:.78rem;font-weight:800;color:var(--accent);background:rgba(6,182,212,.12);border:1px solid rgba(6,182,212,.35)}
+
+/* Liste à puces sobre */
+.skill-list{list-style:none;padding:0;margin:.7rem 0 0;display:grid;gap:.45rem}
+.skill-list li{position:relative;padding-left:1.2rem;color:var(--muted)}
+.skill-list li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.skill-list strong{color:var(--text)}
+
+/* Étiquettes (canaux, cours…) */
+.chip-list{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:.8rem 0 0}
+.chip-list li{padding:.35rem .75rem;border-radius:999px;font-size:.82rem;color:var(--text);background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.3)}
+
+/* Grille de deux ou trois colonnes */
+.skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.skill-grid--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.skill-tile{padding:1rem 1.1rem;border-radius:14px;background:rgba(11,18,32,.55);border:1px solid rgba(255,255,255,.07)}
+.skill-tile h3{margin:0 0 .4rem !important;font-size:1rem}
+.skill-tile p{font-size:.93rem}
+.skill-tile .tile-label{display:block;margin-bottom:.35rem;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.skill-tile--accent{border-color:rgba(6,182,212,.35)}
+.skill-tile--violet{border-color:rgba(192,132,252,.4)}
+.skill-tile--violet .tile-label{color:#d8b4fe}
+
+/* Étapes numérotées */
+.step-list{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+.step-list li{counter-increment:step;padding:.9rem;border-radius:14px;background:rgba(11,18,32,.55);border:1px solid rgba(255,255,255,.07);color:var(--text);font-weight:600;font-size:.92rem}
+.step-list li::before{content:"0" counter(step);display:block;margin-bottom:.35rem;color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.1em}
+
+/* Citation / phrase clé */
+.key-quote{margin:1.6rem 0 0;padding:1rem 1.2rem;border-left:3px solid var(--accent);background:rgba(6,182,212,.06);border-radius:0 12px 12px 0;color:var(--text);font-size:1.02rem}
+
+/* Navigation entre compétences */
+.skill-nav{margin-top:2.5rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.08)}
+.skill-nav h2{margin:0 0 .9rem;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:center}
+.skill-nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:0;margin:0}
+.skill-nav a{display:inline-block;padding:.45rem .9rem;border-radius:999px;border:1px solid rgba(6,182,212,.35);color:var(--text);text-decoration:none;font-size:.88rem;transition:border-color .2s,color .2s}
+.skill-nav a:hover,.skill-nav a:focus-visible{border-color:var(--accent);color:var(--accent)}
+
+@media(max-width:800px){
+  .skill-grid--3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .step-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .skill-grid,.skill-grid--3,.step-list{grid-template-columns:1fr}
+  .skill-tentacle li a{font-size:.8rem}
+}

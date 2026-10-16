@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vente B2B & B2C — Givains Pakasa</title>
-  <meta name="description" content="Vente en B2B comme en B2C — Givains Pakasa" />
+  <title>Vente en B2B comme en B2C — Givains Pakasa</title>
+  <meta name="description" content="Vente en B2B et en B2C : adapter son approche au profil du client — portfolio de Givains Pakasa." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="parcours.css" />
+  <link rel="stylesheet" href="skills.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a class="logo" href="index.html">PORTFOLIO</a>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
       <nav id="nav" class="nav">
-        <a href="skills.html">Compétences</a>
+        <a href="skills.html" aria-current="page">Compétences</a>
         <a href="parcours.html">Parcours</a>
         <a href="projects.html">Projets</a>
         <a href="contact.html">Contact</a>
@@ -24,26 +25,69 @@
   </header>
 
   <main class="container journey-page">
-    <section class="journey-heading">
-      <span class="eyebrow">VENTE B2B & B2C</span>
-      <h1>S’adapter à la vente B2C et B2B</h1>
-      <p class="page-intro">Mon BUT TC m’a préparé à m’adapter aux différentes situations de vente et à ajuster mon approche selon le profil du client.</p>
-    </section>
+    <div class="skill-detail">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li aria-current="page">Vente en B2B comme en B2C</li>
+        </ol>
+      </nav>
 
-    <section class="content" aria-label="Compétences en vente">
-      <div class="journey-card">
-        <h2>Vente en B2C</h2>
-        <p>En B2C, il s’agit d’accompagner des particuliers dans une décision souvent sensible financièrement : expliquer chaque étape et lever les freins du client.</p>
+      <section class="journey-heading">
+        <span class="eyebrow">Compétence · Vente</span>
+        <h1>Vendre en B2B comme en B2C</h1>
+        <p class="page-intro">Mon BUT TC m’a préparé à m’adapter aux différentes situations de vente, à comprendre les attentes des clients et à ajuster mon approche en fonction de leur profil.</p>
+      </section>
 
-        <h2>Vente en B2B</h2>
-        <p>En B2B, l’enjeu est de préserver une relation professionnelle solide et de construire des partenariats durables, en adaptant la communication et le suivi.</p>
-      </div>
-    </section>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s1">
+        <div class="journey-card">
+          <h2 id="s1"><span class="section-number">01</span>Deux contextes, deux approches</h2>
+          <div class="skill-grid">
+            <div class="skill-tile skill-tile--accent">
+              <span class="tile-label">B2C · Particuliers</span>
+              <h3>Accompagner une décision importante</h3>
+              <p>Le défi consiste à accompagner les particuliers dans une décision qui implique souvent des contraintes financières importantes.</p>
+              <ul class="skill-list">
+                <li>Expliquer chaque étape</li>
+                <li>Essayer de lever les freins du client</li>
+              </ul>
+            </div>
+            <div class="skill-tile skill-tile--violet">
+              <span class="tile-label">B2B · Professionnels</span>
+              <h3>Miser sur la relation</h3>
+              <p>Les enjeux sont quelque peu différents : il faut accorder davantage d’importance à la relation avec les clients professionnels.</p>
+              <ul class="skill-list">
+                <li>Préserver une bonne image</li>
+                <li>Construire des partenariats durables</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+      <p class="key-quote reveal-on-scroll">Comprendre les attentes du client et ajuster mon approche en fonction de son profil.</p>
+
+      <nav class="skill-nav" aria-label="Autres compétences en vente">
+        <h2>Autres compétences en vente</h2>
+        <ul>
+          <li><a href="relation-client.html">Relation client</a></li>
+          <li><a href="argumentation.html">Argumentation</a></li>
+          <li><a href="prospection.html">Prospection</a></li>
+          <li><a href="fidelisation.html">Fidélisation</a></li>
+        </ul>
+      </nav>
+
+      <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+    </div>
   </main>
 
-  <footer class="site-footer"><div class="container"><small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

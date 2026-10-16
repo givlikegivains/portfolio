@@ -4,17 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Prospection — Givains Pakasa</title>
-  <meta name="description" content="Prospection — Givains Pakasa" />
+  <meta name="description" content="Prospection : démarche structurée, mailing, téléphone et CRM — portfolio de Givains Pakasa." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="parcours.css" />
+  <link rel="stylesheet" href="skills.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a class="logo" href="index.html">PORTFOLIO</a>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
       <nav id="nav" class="nav">
-        <a href="skills.html">Compétences</a>
+        <a href="skills.html" aria-current="page">Compétences</a>
         <a href="parcours.html">Parcours</a>
         <a href="projects.html">Projets</a>
         <a href="contact.html">Contact</a>
@@ -24,26 +25,78 @@
   </header>
 
   <main class="container journey-page">
-    <section class="journey-heading">
-      <span class="eyebrow">PROSPECTION</span>
-      <h1>Prospection structurée et suivie</h1>
-      <p class="page-intro">La prospection est essentielle en agence : sans mandants, il n’y a rien à vendre.</p>
-    </section>
+    <div class="skill-detail">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li aria-current="page">Prospection</li>
+        </ol>
+      </nav>
 
-    <section class="content" aria-label="Formation et pratique">
-      <div class="journey-card">
-        <h2>Démarche et enseignements</h2>
-        <p>Grâce au cours « Démarche de prospection » en première année et aux enseignements en prospection et négociation, j’ai appris à construire une démarche structurée : définir une cible, constituer un fichier, choisir les bons canaux et suivre mes résultats.</p>
+      <section class="journey-heading">
+        <span class="eyebrow">Compétence · Vente</span>
+        <h1>Prospecter avec méthode</h1>
+        <p class="page-intro">Dans une agence immobilière, la prospection est primordiale, car sans mandants, il n’y a rien à vendre.</p>
+      </section>
 
-        <h3>Expérience terrain</h3>
-        <p>En agence de gestion de patrimoine, j’ai prospecté par voie numérique (mailing) et par téléphone, et j’ai suivi l’avancement des actions via un CRM.</p>
-      </div>
-    </section>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s1">
+        <div class="journey-card">
+          <h2 id="s1"><span class="section-number">01</span>Une démarche structurée</h2>
+          <p>Grâce à mon cours de « Démarche de prospection » en première année, puis aux enseignements en prospection et négociation, j’ai appris à construire une démarche en quatre temps :</p>
+          <ol class="step-list">
+            <li>Définir une cible</li>
+            <li>Constituer un fichier</li>
+            <li>Choisir les bons canaux</li>
+            <li>Suivre mes résultats</li>
+          </ol>
+        </div>
+      </section>
 
-    <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s2">
+        <div class="journey-card">
+          <h2 id="s2"><span class="section-number">02</span>Mise en pratique en gestion de patrimoine</h2>
+          <p>Mon expérience en agence de gestion de patrimoine m’a permis de mettre cette démarche en pratique.</p>
+          <div class="skill-grid skill-grid--3">
+            <div class="skill-tile">
+              <span class="tile-label">Numérique</span>
+              <h3>Mailing</h3>
+              <p>Prospection par voie numérique.</p>
+            </div>
+            <div class="skill-tile">
+              <span class="tile-label">Direct</span>
+              <h3>Téléphone</h3>
+              <p>Prospection téléphonique.</p>
+            </div>
+            <div class="skill-tile">
+              <span class="tile-label">Suivi</span>
+              <h3>CRM</h3>
+              <p>Suivi de l’avancement de mes missions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="skill-nav" aria-label="Autres compétences en vente">
+        <h2>Autres compétences en vente</h2>
+        <ul>
+          <li><a href="relation-client.html">Relation client</a></li>
+          <li><a href="argumentation.html">Argumentation</a></li>
+          <li><a href="fidelisation.html">Fidélisation</a></li>
+          <li><a href="vente-b2b-b2c.html">Vente en B2B comme en B2C</a></li>
+        </ul>
+      </nav>
+
+      <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+    </div>
   </main>
 
-  <footer class="site-footer"><div class="container"><small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

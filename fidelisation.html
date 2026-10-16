@@ -4,17 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Fidélisation — Givains Pakasa</title>
-  <meta name="description" content="Fidélisation — Givains Pakasa" />
+  <meta name="description" content="Fidélisation : recommandation et plan de fidélisation adapté à l’immobilier — portfolio de Givains Pakasa." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="parcours.css" />
+  <link rel="stylesheet" href="skills.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a class="logo" href="index.html">PORTFOLIO</a>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
       <nav id="nav" class="nav">
-        <a href="skills.html">Compétences</a>
+        <a href="skills.html" aria-current="page">Compétences</a>
         <a href="parcours.html">Parcours</a>
         <a href="projects.html">Projets</a>
         <a href="contact.html">Contact</a>
@@ -24,23 +25,73 @@
   </header>
 
   <main class="container journey-page">
-    <section class="journey-heading">
-      <span class="eyebrow">FIDÉLISATION</span>
-      <h1>Fidéliser pour générer la recommandation</h1>
-      <p class="page-intro">Dans l’immobilier, la fidélisation repose surtout sur la recommandation et le suivi post‑transaction.</p>
-    </section>
+    <div class="skill-detail">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li aria-current="page">Fidélisation</li>
+        </ol>
+      </nav>
 
-    <section class="content" aria-label="Stratégies de fidélisation">
-      <div class="journey-card">
-        <h2>Approche et outils</h2>
-        <p>J’ai approfondi la logique de fidélisation en relation client omnicanale et en management de la valeur client. Je sais construire un plan adapté : suivi après la signature, prise de contact à la date anniversaire, proposition régulière d’avis de valeur, newsletter locale, programme de parrainage et sollicitation d’avis en ligne.</p>
-      </div>
-    </section>
+      <section class="journey-heading">
+        <span class="eyebrow">Compétence · Vente</span>
+        <h1>Fidéliser grâce à la recommandation</h1>
+        <p class="page-intro">L’achat immobilier est rare dans une vie : c’est pourquoi la fidélisation dans ce secteur repose surtout sur la recommandation.</p>
+      </section>
 
-    <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s1">
+        <div class="journey-card">
+          <h2 id="s1"><span class="section-number">01</span>Pourquoi fidéliser dans l’immobilier</h2>
+          <p>Un client satisfait peut :</p>
+          <ul class="skill-list">
+            <li>revenir pour <strong>vendre</strong> un bien, <strong>investir</strong> ou <strong>louer</strong> ;</li>
+            <li><strong>recommander l’agence</strong> à son entourage.</li>
+          </ul>
+          <h3>Enseignements associés</h3>
+          <p>J’ai approfondi cette logique dans les cours suivants :</p>
+          <ul class="chip-list">
+            <li>Relation client omnicanale</li>
+            <li>Management de la valeur client</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s2">
+        <div class="journey-card">
+          <h2 id="s2"><span class="section-number">02</span>Construire un plan de fidélisation adapté</h2>
+          <p>Je sais construire un plan de fidélisation qui s’appuie sur plusieurs actions :</p>
+          <div class="skill-grid skill-grid--3">
+            <div class="skill-tile"><span class="tile-label">Après-vente</span><h3>Suivi après la signature</h3></div>
+            <div class="skill-tile"><span class="tile-label">Contact</span><h3>Prise de contact à la date anniversaire de l’achat</h3></div>
+            <div class="skill-tile"><span class="tile-label">Propriétaires</span><h3>Proposition régulière d’avis de valeur</h3></div>
+            <div class="skill-tile"><span class="tile-label">Information</span><h3>Newsletter sur le marché local</h3></div>
+            <div class="skill-tile"><span class="tile-label">Recommandation</span><h3>Programme de parrainage</h3></div>
+            <div class="skill-tile"><span class="tile-label">Réputation</span><h3>Sollicitation d’avis en ligne</h3></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="skill-nav" aria-label="Autres compétences en vente">
+        <h2>Autres compétences en vente</h2>
+        <ul>
+          <li><a href="relation-client.html">Relation client</a></li>
+          <li><a href="argumentation.html">Argumentation</a></li>
+          <li><a href="prospection.html">Prospection</a></li>
+          <li><a href="vente-b2b-b2c.html">Vente en B2B comme en B2C</a></li>
+        </ul>
+      </nav>
+
+      <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+    </div>
   </main>
 
-  <footer class="site-footer"><div class="container"><small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

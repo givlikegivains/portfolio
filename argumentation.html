@@ -4,17 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Argumentation — Givains Pakasa</title>
-  <meta name="description" content="Argumentation — Givains Pakasa" />
+  <meta name="description" content="Argumentation commerciale : expériences, cours de négociation et outil SONCASE — portfolio de Givains Pakasa." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="parcours.css" />
+  <link rel="stylesheet" href="skills.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a class="logo" href="index.html">PORTFOLIO</a>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
       <nav id="nav" class="nav">
-        <a href="skills.html">Compétences</a>
+        <a href="skills.html" aria-current="page">Compétences</a>
         <a href="parcours.html">Parcours</a>
         <a href="projects.html">Projets</a>
         <a href="contact.html">Contact</a>
@@ -24,29 +25,71 @@
   </header>
 
   <main class="container journey-page">
-    <section class="journey-heading">
-      <span class="eyebrow">ARGUMENTATION</span>
-      <h1>Argumenter pour convaincre</h1>
-      <p class="page-intro">Relier les caractéristiques d’un bien aux besoins précis du client est au coeur de l’argumentation commerciale.</p>
-    </section>
+    <div class="skill-detail">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li aria-current="page">Argumentation</li>
+        </ol>
+      </nav>
 
-    <section class="content" aria-label="Compétences et formation">
-      <div class="journey-card">
-        <h2>Expériences et apprentissages</h2>
-        <p>J’ai développé des compétences en argumentation lors de mes stages et jobs étudiants. Argumenter demande de relier chaque caractéristique d’un bien aux besoins réels et précis du client.</p>
+      <section class="journey-heading">
+        <span class="eyebrow">Compétence · Vente</span>
+        <h1>Argumenter au service des besoins du client</h1>
+        <p class="page-intro">Argumenter demande de relier chaque caractéristique d’un bien aux besoins réels et précis du client.</p>
+      </section>
 
-        <h3>Formation</h3>
-        <p>Mes cours de négociation suivis au cours de mes trois années universitaires m’ont permis de négocier et argumenter dans des situations variées et face à des profils différents.</p>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s1">
+        <div class="journey-card">
+          <h2 id="s1"><span class="section-number">01</span>Sur le terrain</h2>
+          <p>J’ai développé des compétences en argumentation grâce à mes différentes expériences professionnelles, que ce soit lors de mes stages ou de mes jobs étudiants.</p>
+          <ul class="chip-list">
+            <li>Stages</li>
+            <li>Jobs étudiants</li>
+          </ul>
+        </div>
+      </section>
 
-        <h3>Outils pratiques</h3>
-        <p>Pour mieux cerner les profils clients, j’ai réalisé plusieurs outils SONCASE, ce qui m’aide à adapter mon discours selon les motivations et freins identifiés.</p>
-      </div>
-    </section>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s2">
+        <div class="journey-card">
+          <h2 id="s2"><span class="section-number">02</span>En formation : la négociation</h2>
+          <p>En parallèle de mes expériences professionnelles, mes études m’ont permis d’acquérir des bases solides pour développer cette compétence.</p>
+          <ul class="skill-list">
+            <li>Des cours de négociation suivis au cours de mes <strong>trois années universitaires</strong>.</li>
+            <li>Des mises en situation de négociation et d’argumentation <strong>plus ou moins complexes</strong>.</li>
+            <li>Face à des <strong>profils de clients bien distincts</strong>.</li>
+          </ul>
+        </div>
+      </section>
 
-    <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+      <section class="skill-section reveal-on-scroll" aria-labelledby="s3">
+        <div class="journey-card">
+          <h2 id="s3"><span class="section-number">03</span>Un outil : la méthode SONCASE</h2>
+          <p>Pour mieux cerner le profil du client en face de moi, j’ai notamment réalisé plusieurs outils SONCASE.</p>
+        </div>
+      </section>
+
+      <nav class="skill-nav" aria-label="Autres compétences en vente">
+        <h2>Autres compétences en vente</h2>
+        <ul>
+          <li><a href="relation-client.html">Relation client</a></li>
+          <li><a href="prospection.html">Prospection</a></li>
+          <li><a href="fidelisation.html">Fidélisation</a></li>
+          <li><a href="vente-b2b-b2c.html">Vente en B2B comme en B2C</a></li>
+        </ul>
+      </nav>
+
+      <p class="journey-back"><a class="cta" href="skills.html">← Retour aux compétences</a></p>
+    </div>
   </main>
 
-  <footer class="site-footer"><div class="container"><small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
