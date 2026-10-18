@@ -8,6 +8,3 @@
 /* Logo des pages intérieures — même rendu que la marque de l'accueil */
 .logo{color:var(--text);font-weight:800;font-size:1.05rem;letter-spacing:.08em;text-decoration:none;transition:color .2s}
 .logo:hover,.logo:focus-visible{color:var(--accent)}
-
-/* 3 compteurs sur l’accueil */
-@media(min-width:801px){.stats-grid{grid-template-columns:repeat(3,1fr)}}
