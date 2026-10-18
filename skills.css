@@ -89,3 +89,4 @@
 @media(max-width:800px){.routes-grid{grid-template-columns:1fr}}
 @media(max-width:480px){.route{padding:1rem .9rem}.route-track .step{font-size:.64rem}}
 .chip-list+p{margin-top:1rem}
+.skill-list+p{margin-top:1rem}
