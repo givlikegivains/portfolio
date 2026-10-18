@@ -30,3 +30,4 @@ body{background:linear-gradient(180deg,#eef1f5 0%,#e2e8ef 100%)}
 .journey-card:focus-within{border-color:rgba(79,109,143,.45)}
 .journey-type{background:rgba(79,109,143,.1);color:#4f6d8f}
 .journey-card .muted{color:#6b7a8c}
+.outline-cta{border-color:rgba(79,109,143,.45);color:#4f6d8f}.outline-cta:hover{border-color:#4f6d8f}
