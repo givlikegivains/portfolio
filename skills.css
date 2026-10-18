@@ -90,3 +90,12 @@
 @media(max-width:480px){.route{padding:1rem .9rem}.route-track .step{font-size:.64rem}}
 .chip-list+p{margin-top:1rem}
 .skill-list+p{margin-top:1rem}
+
+/* Savoir-être décalé vers la droite pour aérer la colonne Analyse de données */
+@media(min-width:1101px){
+  .skill-tentacle--soft{margin-left:3rem}
+  .skill-tentacle--soft ul{min-width:0}
+  .skill-tentacle--soft li{white-space:normal}
+}
+/* En dessous de 1100 px, une seule colonne pour éviter les chevauchements */
+@media(max-width:1100px){.skills-octopus{grid-template-columns:1fr}}
