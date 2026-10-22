@@ -36,11 +36,12 @@
         <div class="journey-marker">01</div>
         <div class="journey-content">
           <time class="journey-date">Mars — Mai 2026</time>
-          <div class="journey-card">
+          <div class="journey-card journey-card--clickable" data-dialog="stage-ay">
             <span class="journey-type journey-type--experience">Stage</span>
             <h2>Stage — Gestionnaire de patrimoine (A&amp;Y)</h2>
             <p>Mission en cabinet de gestion de patrimoine : audit patrimonial, analyse financière, préparation de dossiers clients et renforcement de la conformité documentaire.</p>
             <p class="muted">Compétences : analyse, conseil client, outils digitaux bancaires.</p>
+            <button class="journey-more" type="button" aria-haspopup="dialog">Missions et lettre de recommandation <span aria-hidden="true">→</span></button>
           </div>
         </div>
       </article>
@@ -76,6 +77,36 @@
 
     <p class="journey-back"><a class="cta" href="index.html">← Retour</a></p>
   </main>
+
+  <dialog class="modal" id="stage-ay" aria-labelledby="stage-ay-title">
+    <div class="modal-head">
+      <div>
+        <span class="journey-type journey-type--experience">Stage · 8 semaines</span>
+        <h2 id="stage-ay-title">Stage — Gestionnaire de patrimoine (A&amp;Y Patrimoine)</h2>
+        <p class="modal-meta">Du 6 avril au 29 mai 2026 · Mulhouse</p>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Fermer">×</button>
+    </div>
+    <div class="modal-body">
+      <h3>Mes missions</h3>
+      <ul class="modal-missions">
+        <li><strong>Analyse patrimoniale.</strong> J’ai participé à l’audit patrimonial et à l’analyse financière des clients, notamment autour de leurs projets immobiliers.</li>
+        <li><strong>Prospection commerciale.</strong> J’ai contacté des entreprises par e-mail et par téléphone pour leur proposer des webinaires gratuits d’éducation financière (retraite, inflation, préparation d’un achat immobilier…), en suivant l’avancement de mes actions dans un CRM.</li>
+        <li><strong>Suivi des dossiers clients.</strong> J’ai préparé des dossiers clients et contribué au renforcement de la conformité documentaire.</li>
+      </ul>
+      <p class="modal-link">Ce stage m’a montré qu’un projet immobilier s’inscrit souvent dans une réflexion patrimoniale plus large (financement, fiscalité, épargne) : un regard utile pour accompagner demain des acquéreurs ou des investisseurs.</p>
+
+      <h3>Lettre de recommandation</h3>
+      <blockquote class="modal-quote">
+        « Compte tenu de ses compétences, de son sérieux et de son potentiel, je recommande vivement Monsieur PAKASA Givains pour toute poursuite d’études, alternance ou opportunité professionnelle correspondant à son parcours. »
+        <cite>Maxime Block, directeur des ressources humaines, A&amp;Y Patrimoine</cite>
+      </blockquote>
+      <a class="modal-letter" href="assets/images/preuves/lettre-recommandation-ay-patrimoine.png" target="_blank" rel="noopener" aria-label="Ouvrir la lettre de recommandation en grand">
+        <img src="assets/images/preuves/lettre-recommandation-ay-patrimoine.png" alt="Lettre de recommandation de Maxime Block, DRH du cabinet A&amp;Y Patrimoine, datée du 4 juin 2026, attestant du stage de Givains Pakasa du 6 avril au 29 mai 2026" width="932" height="866" loading="lazy" />
+      </a>
+      <p class="modal-letter-link"><a href="assets/images/preuves/lettre-recommandation-ay-patrimoine.png" target="_blank" rel="noopener">Ouvrir la lettre en grand ↗</a></p>
+    </div>
+  </dialog>
 
   <footer class="site-footer"><div class="container"><small>© <span id="year"></span> Givains Pakasa — Tous droits réservés</small></div></footer>
   <script src="script.js"></script>

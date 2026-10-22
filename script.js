@@ -72,4 +72,18 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (e) {
     // ignore
   }
+
+  // Fenêtres (dialog) : ouverture depuis un élément [data-dialog], fermeture par ×, Échap ou clic à l'extérieur
+  document.querySelectorAll('[data-dialog]').forEach(trigger => {
+    const dialog = document.getElementById(trigger.dataset.dialog);
+    if (!dialog || typeof dialog.showModal !== 'function') return;
+    trigger.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      if (!dialog.open) dialog.showModal();
+    });
+  });
+  document.querySelectorAll('dialog.modal').forEach(dialog => {
+    dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+    dialog.querySelectorAll('[data-close]').forEach(btn => btn.addEventListener('click', () => dialog.close()));
+  });
 });
