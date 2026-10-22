@@ -26,3 +26,7 @@
   .interest-row{grid-template-columns:1fr;gap:1.6rem;padding:2.4rem 0}
   .interest-row--reverse .interest-media{order:0}
 }
+
+/* Deux photos côte à côte dans un même cadre (ex. Voyage) */
+.interest-duo{display:grid;grid-template-columns:1fr 1fr;gap:4px;width:100%;height:100%;background:#ffffff}
+.interest-duo img{display:block;width:100%;height:100%;object-fit:cover}
